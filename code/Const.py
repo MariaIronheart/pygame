@@ -1,9 +1,20 @@
 WIN_WIDTH = 993
-WIN_HEIGHT = 550
+WIN_HEIGHT = 500
 COLOR_WHITE = (255, 255, 255)
-COLOR_LBLUE= (150,216,217)
+COLOR_YELLOW= (255, 210, 80)
+COLOR_BLUE = (218, 239, 241)
+
+
+ENTITY_SPEED = {
+    'Layer1': 0,
+    'Layer2': 1,
+    'Layer3': 2,
+    'Layer4': 3,
+    'Layer5': 4,
+    'Layer6': 5
+
+}
 
 MENU_OPTION = (
     'NEW GAME',
-    'SCORE',
     'EXIT')
