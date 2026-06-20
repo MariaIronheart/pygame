@@ -12,13 +12,15 @@ from code.Const import WIN_HEIGHT, WIN_WIDTH, COLOR_WHITE, MENU_OPTION, COLOR_YE
 class Menu:
     def __init__(self, window):
         self.window = window
-        self.surf = pygame.image.load('./asset/background.png')
+        self.surf = pygame.image.load('./asset/background.png').convert_alpha()
         self.rect = self.surf.get_rect(left=0, top=0)
 
     def run(self, ):
         menu_option = 0
         pygame.mixer_music.load('./asset/menusound.mp3')
+        pygame.mixer_music.set_volume(0.2)
         pygame.mixer_music.play(-1)
+
         while True:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(80, "Echoes of the", COLOR_WHITE, text_center_pos=(WIN_WIDTH/2, 90))

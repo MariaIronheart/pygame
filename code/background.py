@@ -4,7 +4,7 @@ from code.Const import WIN_WIDTH, ENTITY_SPEED
 from code.entity import Entity
 
 class Background(Entity):
-    def __init__(self, name: str, position: tuple, speed: int = 4):
+    def __init__(self, name: str, position: tuple, speed: int = 1):
         super().__init__(name, position)
 
 
