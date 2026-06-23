@@ -13,10 +13,13 @@ ENTITY_SPEED = {
     'Layer5': 4,
     'Layer6': 5,
     'Player': 4,
-    'bat': 4,
+    'bat': 6,
 
 }
 
 MENU_OPTION = (
     'NEW GAME',
     'EXIT')
+
+PLAYER_LIVES = 3
+WIN_SCORE = 10

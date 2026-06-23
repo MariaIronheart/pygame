@@ -21,4 +21,4 @@ class EntityFactory:
             case 'Player':
                 return Player('Player', (120, WIN_HEIGHT / 2))
             case 'bat':
-                return Enemy('bat', (WIN_WIDTH + 50, random.randint(0, WIN_HEIGHT)))
+                return Enemy('bat', (WIN_WIDTH + 50, random.randint(50, WIN_HEIGHT - 100)))
