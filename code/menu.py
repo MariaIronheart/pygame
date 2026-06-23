@@ -25,6 +25,9 @@ class Menu:
             self.window.blit(source=self.surf, dest=self.rect)
             self.menu_text(80, "Echoes of the", COLOR_WHITE, text_center_pos=(WIN_WIDTH/2, 90))
             self.menu_text(80, "Falls", COLOR_WHITE, text_center_pos=(WIN_WIDTH/2, 170))
+            self.menu_text(20, "CONTROLS:", COLOR_WHITE, text_center_pos=(WIN_WIDTH / 2, 350))
+            self.menu_text(22, "Arrow Up or Down - Move", COLOR_WHITE, text_center_pos=(WIN_WIDTH / 2, 380))
+            self.menu_text(22, "Space - Shoot", COLOR_WHITE, text_center_pos=(WIN_WIDTH / 2, 405))
 
             for i in range(len(MENU_OPTION)):
                 if i == menu_option:
